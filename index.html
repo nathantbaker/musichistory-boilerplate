@@ -4,82 +4,155 @@
     <title>Music History: Nathan T. Baker</title>
     <meta charset="UTF-8">
     <meta name="description" content="Feast your eyes on the most grandest of Music History Apps. I built this in Nashville Software School.">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">  
   </head>
   <body>
-    <div id="wrapper">
-    <header>
-      <!-- Header -->
-      <h1>Music History App</h1>
-      <p>Feast your eyes on the most grandest of music history apps.</p>
-    </header>
-    <nav>
+
+    <div class="container">
+
       <!-- Navigation -->
-      <p>View Music | <a href="#">Add Music</a> | <a href="#">Profile</a></p>
-    </nav>
-    <div id="table">
-    <aside>
-      <!-- Left Column -->
-      <p>Song length:</p>
-      <form>
-        <input type="range" name="points" min="0" max="10">
-      </form>
-      <p>Artist:</p>
-      <select>
-        <option value="japandroids">Japandroids</option>
-        <option value="bieber">Justin Bieber</option>
-        <option value="radiohead">Radiohead</option>
-        <option value="west">Kanye West</option>
-        <option value="switchfoot">Switchfoot</option>
-      </select>
-      <p>Album:</p>
-      <select>
-        <option value="celebration">Celebration Rock</option>
-        <option value="purpose">Purpose</option>
-        <option value="vice">Vice Verses</option>
-        <option value="fading">Fading West</option>
-        <option value="ok">Ok Computer</option>
-        <option value="808s">808s & Heartbreak</option>
-        <option value="nothing">Nothing Is Sound</option>
-      </select>
-      <p>Genre:</p>
-      <form>
-        <input type="checkbox" name="rock" value="rock">Rock<br/>
-        <input type="checkbox" name="pop" value="pop">Pop<br/>
-        <input type="checkbox" name="blues" value="blues">Blues<br/>
-        <input type="checkbox" name="classical" value="classical">Classical<br/>
-        <input type="checkbox" name="jazz" value="jazz">Jazz<br/>
-        <input type="checkbox" name="hiphop" value="hiphop">Hip hop<br/>
-      </form>
-      <br/>
-      <a href="#" class="button">Filter</a>
-    </aside>
-    <padding>
-    </padding>
-    <section>
-      <!-- Main Section -->
-      <article>
-        <h2>The Nights of Wines and Roses</h2>
-        <p>Japandroids | Celebration Rock | Alternative rock</p>
-      </article>
-      <article>
-        <h2>What Do You Mean?</h2>
-        <p>Justin Bieber | Purpose | Dance-pop</p>
-      </article>
-      <article>
-        <h2>Sorry</h2>
-        <p>Justin Bieber | Purpose | Dance-pop</p>
-      </article>
-      <article>
-        <h2>Love Yourself</h2>
-        <p>Justin Bieber | Purpose | Dance-pop</p>
-      </article>
-    </section>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Music History App</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">View Music <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Add Music</a></li>
+              <li><a href="#">Profile</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <!-- Middle Row -->
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-4">
+          <div class="controls">
+            
+            <form>
+            <h2>Search</h2>
+            <h3>Song length:</h3>
+              <input type="range" name="points" min="0" max="10">
+
+            <h3>Artist:</h3>
+            
+            <select>
+              <option value="japandroids">Japandroids</option>
+              <option value="bieber">Justin Bieber</option>
+              <option value="radiohead">Radiohead</option>
+              <option value="west">Kanye West</option>
+              <option value="switchfoot">Switchfoot</option>
+            </select>
+
+            <h3>Album:</h3>
+
+            <select>
+              <option value="celebration">Celebration Rock</option>
+              <option value="purpose">Purpose</option>
+              <option value="vice">Vice Verses</option>
+              <option value="fading">Fading West</option>
+              <option value="ok">Ok Computer</option>
+              <option value="808s">808s & Heartbreak</option>
+              <option value="nothing">Nothing Is Sound</option>
+            </select>
+
+            <h3>Genre:</h3>
+            
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="rock">
+                    Rock
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="pop">
+                    Pop
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="blues">
+                    Blues
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="classical">
+                    Classical
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="jazz">
+                    Jazz
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="hiphop">
+                    Hip hop
+                </label>
+              </div>
+
+            <br/>
+            <a href="#" type="button" class="btn btn-primary">Filter</a>
+            </form>
+          </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="col-md-8 section">
+          <article>
+          <h2>The Nights of Wines and Roses</h2>
+          <p>Japandroids | Celebration Rock | Alternative rock</p>
+          </article>
+          <article>
+            <h2>What Do You Mean?</h2>
+            <p>Justin Bieber | Purpose | Dance-pop</p>
+          </article>
+          <article>
+            <h2>Sorry</h2>
+            <p>Justin Bieber | Purpose | Dance-pop</p>
+          </article>
+          <article>
+            <h2>Love Yourself</h2>
+            <p>Justin Bieber | Purpose | Dance-pop</p>
+          </article>
+        </div>
+      
+      </div>
+        
     </div>
-    <footer>
-      <!-- Footer -->
-      <p>It's very important to read the fine print.</p>
-    </footer>
+    <!-- Footer -->
+    <div class="row panel-footer text-center">
+      <div class="col-xs-12">
+        <p>It's very important to read the fine print.</p>
+      </div>
     </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous
+    "></script>
+
   </body>
 </html>

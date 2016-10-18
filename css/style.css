@@ -2,106 +2,24 @@
    Project: Music History App
    Author:  Nathan T. Baker
    Created: 10/7/2016
+   Updated: 10/18/2016
    Notes:   I did this while in Nashville Software School.
    ============================================================ */
 
-/* ===GLOBAL=== */
-
-body {
-  font-family: arial;
-}
-
-p {
-  font-size: .9em;
-}
-
-header, nav, aside, section, footer {
-  padding: 10px;
-  margin: 10px 0;
+.controls {
+  background-color: #F8F8F8;
+  border: 1px solid #ccc;
   border-radius: 10px;
+  padding: 20px;
+  margin: 0 0 20px 0;
 }
 
-.button {
-  background-color: #444;
-  border: none;
-  color: #ccc;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-select {
-  font-size: 2em;
-}
-
-h1, h2 {
+.controls h2 {
   margin: 0;
-  font-weight: 400;
-}
-
-h1 {
-  color: grey;
-  background: url("../images/boom.gif") no-repeat top right; /*another boom set in header*/
-}
-
-/* ===PRIMARY=== */
-
-#wrapper {
-  width: 800px;
-  margin: 0 auto;
-}
-
-#table { /*added an additional wrapper to get columns the same height*/
-  display: table;
-}
-
-h2 {
-  color: #785616;
-  font-size: 1.8em;
-  font-family: 'Helvetica Neue', arial;
-}
-
-/* ===SECTION=== */
-
-section {
-  background-color: #FEFAC0;
-  width: 600px;
-  display: table-cell; /*works with the table id*/
-}
-
-padding {
-  background-color: white;
-  width: 10px;
-  display: table-cell; /*works with the table id*/
-}
-
-/* ===HEADER=== */
-
-header {
-  text-align: center;
-  background: url("../images/boom.gif") no-repeat top left; /*another boom set in h1*/
-}
-
-nav {
-  background-color: #FFB4B0;
-}
-
-/* ===SIDEBAR=== */
-
-aside {
-  background-color: #4DD7FA;
-  width: 200px;
-  margin-right: 20px;
-  display: table-cell; /*works with the table id*/
-}
-
-/* ===FOOTER=== */
-
-footer {
-  clear: both;
-  text-align: center;
-  font-size: .7em;
+  font-size: 1em;
+  text-transform: uppercase;
   color: grey;
 }
+
+.controls h3 {
+  font-size: 1.4em;}
