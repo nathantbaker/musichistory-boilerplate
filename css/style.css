@@ -2,9 +2,13 @@
    Project: Music History App
    Author:  Nathan T. Baker
    Created: 10/7/2016
-   Updated: 10/18/2016
+   Updated: 10/20/2016
    Notes:   I did this while in Nashville Software School.
    ============================================================ */
+
+body {
+  min-width: 280px;
+}
 
 .controls {
   background-color: #F8F8F8;
@@ -23,3 +27,9 @@
 
 .controls h3 {
   font-size: 1.4em;}
+
+article {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
