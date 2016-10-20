@@ -12,10 +12,13 @@ var songs = [
 
 // Target where we're injecting songs
 var html = document.getElementById("songs");
-html.innerHTML = "<h1>hi!</h1>";
+var htmlBefore = "<article><p>";
+var htmlAfter = "</article></p>";
 
+// Inject songs into HTML
 for (var i = 0; i < songs.length; i++) {
-  console.log("Song", i + 1 );
+  var stringToAdd = htmlBefore + "Song " + (i + 1) + htmlAfter;
+  html.innerHTML += stringToAdd;
 }
 
 // Students must use JavaScript to create a list of songs in the `index.html` file for their Music History project.
